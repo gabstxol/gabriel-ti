@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel | TI Softys</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #0b1120;
+  color: white;
+}
+
+/* MENU LATERAL */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #020617;
+  padding: 20px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  color: #3b82f6;
+}
+
+.sidebar a {
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+  color: #cbd5f5;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #3b82f6;
+}
+
+/* CONTEÚDO */
+.main {
+  margin-left: 250px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+}
+
+.header p {
+  opacity: 0.7;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111827;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #1e293b;
+}
+
+/* IMAGEM */
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+/* TEXTO */
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  font-size: 1em;
+}
+
+.card p {
+  font-size: 0.85em;
+  color: #9ca3af;
+}
+
+/* POPUP */
+.popup {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: #374151;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.85em;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover .popup {
+  opacity: 1;
+}
+
+/* SEÇÕES */
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #3b82f6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="sidebar">
+  <h2>Gabriel TI</h2>
+  <a href="#home">Home</a>
+  <a href="#atuacao">Minha Atuação</a>
+  <a href="#papel">Meu Papel</a>
+  <a href="#areas">Áreas de TI</a>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="main">
+
+  <!-- HOME -->
+  <div id="home" class="section">
+    <h2>Sobre Mim</h2>
+
+    <div style="max-width: 700px; line-height: 1.6; color: #d1d5db;">
+      <p>
+        Sou Gabriel Teixeira, desenvolvedor em formação com foco em tecnologias .NET e atuação prática na área de Tecnologia da Informação. Atualmente atuo como Jovem Aprendiz em TI, participando da execução de processos essenciais para o ambiente corporativo.
+      </p>
+
+      <p style="margin-top: 15px;">
+        Tenho experiência com instalação, configuração e suporte de sistemas, além de rotinas como formatação, backup e atendimento ao usuário. Também desenvolvo projetos próprios, fortalecendo minha base técnica e ampliando minha visão sobre desenvolvimento de software.
+      </p>
+
+      <p style="margin-top: 15px;">
+        Busco evolução constante, unindo prática e aprendizado para me tornar um profissional completo na área de tecnologia, com foco em eficiência, organização e soluções que gerem valor real.
+      </p>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Gabriel - Jovem Aprendiz TI</h1>
+    <p>Execução de processos, instalação e suporte tecnológico</p>
+  </div>
+
+  <!-- ATUAÇÃO -->
+  <div id="atuacao" class="section">
+    <h2>Minha Atuação</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+        <div class="card-content">
+          <h3>Instalação e Configuração</h3>
+          <p>Softwares e equipamentos corporativos</p>
+        </div>
+        <div class="popup">Instalação, atualização e configuração de sistemas e dispositivos.</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+        <div class="card-content">
+          <h3>Formatação</h3>
+          <p>Preparação de máquinas</p>
+        </div>
+        <div class="popup">Formatação e preparação de computadores para uso profissional.</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31">
+        <div class="card-content">
+          <h3>Backup e Migração</h3>
+          <p>Segurança de dados</p>
+        </div>
+        <div class="popup">Backup seguro e migração de dados organizacionais.</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+        <div class="card-content">
+          <h3>Suporte Técnico</h3>
+          <p>Atendimento ao usuário</p>
+        </div>
+        <div class="popup">Suporte e resolução de problemas técnicos.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PAPEL -->
+  <div id="papel" class="section">
+    <h2>Meu Papel</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+        <div class="card-content">
+          <h3>Execução com Qualidade</h3>
+          <p>Eficiência e organização</p>
+        </div>
+        <div class="popup">Execução de atividades com foco em qualidade e precisão.</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+        <div class="card-content">
+          <h3>Suporte Colaborativo</h3>
+          <p>Trabalho em equipe</p>
+        </div>
+        <div class="popup">Colaboração com equipes e suporte técnico contínuo.</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984">
+        <div class="card-content">
+          <h3>Melhoria Contínua</h3>
+          <p>Evolução constante</p>
+        </div>
+        <div class="popup">Aprimoramento contínuo de processos e conhecimento.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ÁREAS -->
+  <div id="areas" class="section">
+    <h2>Áreas de Atuação em TI</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8">
+        <div class="card-content">
+          <h3>Redes</h3>
+          <p>Infraestrutura e conectividade</p>
+        </div>
+        <div class="popup">Gerenciamento de redes e comunicação.</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+        <div class="card-content">
+          <h3>Hardware</h3>
+          <p>Equipamentos e manutenção</p>
+        </div>
+        <div class="popup">Manutenção de dispositivos e periféricos.</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+        <div class="card-content">
+          <h3>Software</h3>
+          <p>Sistemas corporativos</p>
+        </div>
+        <div class="popup">Instalação e suporte de aplicações.</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
